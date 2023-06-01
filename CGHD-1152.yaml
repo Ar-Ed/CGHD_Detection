@@ -1,0 +1,11 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ./data/CGHD-1152-YOLO  # dataset root dir
+train: ../CGHD-1152-YOLO/images/train  # train images (relative to 'path') 
+val: ../CGHD-1152-YOLO/images/val  # val images (relative to 'path')
+test: ../CGHD-1152-YOLO/images/test  # val images (relative to 'path')
+
+# Classes (45 CGHD classes)
+nc: 45
+
+names:
+  ['crossover', 'microphone', 'transistor.photo', 'triac', 'capacitor.polarized', 'operational_amplifier', 'lamp', 'junction', 'voltage.dc_ac', 'diode.light_emitting', 'integrated_circuit', 'probe.current', 'optocoupler', 'terminal', 'switch', 'or', 'relay', 'nor', 'voltage.dc_regulator', 'resistor.adjustable', 'transistor', 'socket', 'diode', 'resistor.photo', 'schmitt_trigger', 'varistor', 'resistor', 'integrated_cricuit.ne555', 'antenna', 'thyristor', 'diac', 'and', 'motor', 'nand', 'inductor', 'vss', 'fuse', 'not', 'xor', 'voltage.dc', 'transformer', 'gnd', 'text', 'capacitor.unpolarized', 'speaker']
