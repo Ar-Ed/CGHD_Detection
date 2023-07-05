@@ -1,3 +1,20 @@
+
+#### In this study we evaluate various object detection models on circuit sketches. 
+[Dataset](https://osf.io/ju9ck/) with _45_ classes from 12 drafters.
+#### Example Prediction
+<img src="output3.png " width="600" />
+
+## Example Training Images
+These are only the validation scores of YOLOv8 and Cascade R-CNN. Take a look at the [paper draft](paper_draft.pdf) for more information
+
+| mAP@0.5             | mAP@0.5:0.95               |
+| ---------------------- | ---------------------- |
+| <img src="yolov8l_map_05.png " height="300" /> | <img src="yolov8l_map_0595.png  " height="300" />|
+| <img src="cascade_mask_rcnn_R_50_FPN_map_05.png " height="300" /> | <img src="cascade_mask_rcnn_R_50_FPN_map_0595.png " height="300" />  |
+
+
+
+
 ## To do
 - [x] Dataset Conversion
   - [x] PASCAL VOC -> YOLO Format
@@ -19,7 +36,7 @@
 - Parameters are set for RTX3060 6G 
 
 
-## Expected Directory Structure
+## Expected Directory Structure After Setup
 - setup_environment.ipynb
 - train_detectron.ipynb
 - train_detr.ipynb
